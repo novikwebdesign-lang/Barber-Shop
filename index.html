@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barber Shop</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+    }
+
+    header {
+      padding: 25px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #333;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #d4af37;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(#111b, #111b), url("https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1600&q=80") center/cover;
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #d4af37;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      background: #d4af37;
+      color: #111;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .services {
+      padding: 70px 8%;
+      text-align: center;
+    }
+
+    .services h2 {
+      font-size: 38px;
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #1d1d1d;
+      padding: 30px;
+      width: 280px;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      color: #d4af37;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      color: #ccc;
+    }
+
+    .contact {
+      padding: 70px 20px;
+      text-align: center;
+      background: #1a1a1a;
+    }
+
+    .contact h2 {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      color: #999;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      nav a {
+        margin-left: 10px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">BARBER SHOP</div>
+
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Votre style.<br><span>Notre métier.</span></h1>
+
+    <p>
+      Bienvenue chez Barber Shop, votre espace dédié aux coupes modernes,
+      aux barbes soignées et au style.
+    </p>
+
+    <a class="button" href="#contact">Prendre rendez-vous</a>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Nos services</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Coupe Homme</h3>
+        <p>Coupe moderne et personnalisée.</p>
+      </div>
+
+      <div class="card">
+        <h3>Taille de Barbe</h3>
+        <p>Une barbe propre et parfaitement travaillée.</p>
+      </div>
+
+      <div class="card">
+        <h3>Coupe + Barbe</h3>
+        <p>Le style complet pour un look impeccable.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Réservez votre rendez-vous</h2>
+
+    <p>Contactez-nous pour réserver votre créneau.</p>
+
+    <br>
+
+    <a class="button" href="https://wa.me/212600000000">
+      Nous contacter sur WhatsApp
+    </a>
+  </section>
+
+  <footer>
+    © 2026 Barber Shop — Tous droits réservés.
+  </footer>
+
+</body>
+</html>
